@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.header {
+  height: 650px;
+  background-image: url(./images/elon-musk.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 50%;
+  background-position: right center;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header-1 {
+  padding: 220px;
+}
+
+.header-1 h2 {
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.header-1 h5 {
+  color: black;
+  font-size: 15px;
+}
+#btn {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: lightgreen;
+  border: none;
+}
+#btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.aside {
+  width: 100px;
+  padding: 40px;
+  font-size: xx-large;
+  line-height: 3rem;
+}
+
+.main {
+  width: 800px;
+  margin: 0 auto;
+}
+.right {
+  width: 250px;
+  line-height: 2rem;
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 10px;
+    height: 100%;
+  }
+
+  .header-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 45%;
+    padding: 10px;
+  }
+
+  .header-1 h2 {
+    margin-right: 20%;
+  }
+
+  .header-1 h5 {
+    margin-right: 10%;
+  }
+
+  #btn {
+    margin-right: 25%;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+  .aside {
+    font-size: medium;
+    width: auto;
+    margin: 4px auto;
+  }
+  .right {
+    margin-right: 18%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    padding: 10px;
+    height: 100%;
+  }
+
+  .header-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 45%;
+    padding: 10px;
+  }
+  .header-1 h2 {
+    margin-right: 10%;
+  }
+
+  .header-1 h5 {
+    margin-right: 25%;
+  }
+
+  #btn {
+    margin-right: 25%;
+    width: 70%;
+    height: 30px;
+    font-size: 2px;
+    padding-bottom: 30px;
+  }
+  .aside {
+    padding: 5px;
+    font-size: medium;
+    width: auto;
+  }
+  .right {
+    margin-right: 64%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .aside {
+    padding: 5px;
+    font-size: x-large;
+    margin-left: 15px;
+  }
+}
